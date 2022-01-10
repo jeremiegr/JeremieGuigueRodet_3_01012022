@@ -4,9 +4,204 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/dc6fd1c2b4.js" crossorigin="anonymous"></script>
+    <title>Reservez le menu qui vous convient sur Ohmyfood</title>
 </head>
 <body>
+    <div id="main_body">
+        <header>
+            <div class="header__logo">
+                <img src="images/ohmyfood.png" alt="logo de ohmyfood"/> 
+            </div>
+        </header>
+        <section class="search">
+            <form method="post" action="formulaire.php" class="form" >
+                <button class="form__button">
+                    <i class="fas fa-map-marker-alt"></i>
+                </button>
+                <div class="form__place">
+                    <input type="search" name="recherche" placeholder="Paris, belleville" />
+                </div>
+            </form>
+            <h1>
+                Réservez le menu qui vous convient
+            </h1>
+            <p>
+                Découvrez des restaurants d'exception, sélectionnés par nos soins.
+            </p>
+            <a>
+                <button class="search-table">
+                    Explorez nos restaurants 
+                </button>
+            </a>   
+        </section>
+        <section class="tutorial">
+            <h2>
+                Fonctionnement
+            </h2>
+            <ol>
+                <li class="tuto-step">
+                    <div class="tuto-step__logo">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <p>
+                        Choisissez un restaurant
+                    </p>
+                </li>
+                <li class="tuto-step">
+                    <div class="tuto-step__logo">
+                        <i class="fas fa-list-ul"></i>
+                    </div>
+                    <p>
+                        Composez votre menu 
+                    </p>
+                </li>
+                <li class="tuto-step">
+                    <div class="tuto-step__logo tuto-step__logo--color">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <p>
+                        Dégustez au restaurant 
+                    </p>
+                </li>
+            </ol>
+
+        </section>
+        <main>
+            <h2>
+                Restaurants 
+            </h2>
+            <div>
+                <article class="vignette-place">
+                    <a href="#">
+                        <div class="vignette-place__image">
+                            <img src="images/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo de plat gastronomique à la palette du gout"/>
+                        </div>
+                        <p class="vignette-place__new-alert">
+                            Nouveau
+                        </p>
+                        <div class="vignette-place__infos">
+                            <div class="vignette-place__infos__text">
+                                <h3>
+                                    La palette du gout 
+                                </h3>
+                                <p>
+                                    Ménilmontant
+                                </p>
+                            </div>
+                            <div class="vignette-place__infos__like">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                <article class="vignette-place"> 
+                    <a href="#">
+                        <div class="vignette-place__image">
+                            <img src="images/stil-u2Lp8tXIcjw-unsplash.jpg" alt="photo de plat gastronomique à La note enchantée"/>
+                        </div>
+                        <p class="vignette-place__new-alert">
+                            Nouveau
+                        </p>
+                        <div class="vignette-place__infos">
+                            <div class="vignette-place__infos__text">
+                                <h3>
+                                    La note enchantée 
+                                </h3>
+                                <p>
+                                    Charonne
+                                </p>
+                            </div>
+                            <div class="vignette-place__infos__like">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                <article>
+                    <a href="france.html">
+                        <div class="vignette-place__image">
+                            <img src="images/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="photo de plat gastronomique à La Française"/>
+                        </div>
+                        <div class="vignette-place__infos">
+                            <div class="vignette-place__infos__text">
+                                <h3>
+                                    A la Française
+                                </h3>
+                                <p>
+                                    Cité Rouge
+                                </p>
+                            </div>
+                            <div class="vignette-place__infos__like">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                <article>
+                    <a href="#">
+                        <div class="vignette-place__image">
+                            <img src="images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="photo de plat gastronomique au Délice des sens"/>
+                        </div>
+                        <div class="vignette-place__infos">
+                            <div class="vignette-place__infos__text">
+                                <h3>
+                                    Le délice des sens 
+                                </h3>
+                                <p>
+                                    Folie-Méricourt
+                                </p>
+                            </div>
+                            <div class="vignette-place__infos__like">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </main>
+        <footer>
+            <div class="footer__logo">
+                <img src="images/ohmyfood.png" alt="logo de ohmyfood"/>
+            </div>
+            <ul>
+                <li>
+                    <a href="#">
+                        <div>
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <p>
+                            Proposez un restaurant 
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div>
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <p>
+                            Devenir partenaire
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>
+                            Mention légales
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>
+                            Contact
+                        </p>
+                    </a>                       
+                </li>
+            </ul>
+        </footer>
+    </div>
     
 </body>
 </html>
