@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/dc6fd1c2b4.js" crossorigin="anonymous"></script>
     <title>Reservez le menu qui vous convient sur Ohmyfood</title>
+    <link rel="stylesheet" href="style/main.css"/> 
 </head>
 <body>
     <div id="main_body">
@@ -16,11 +17,11 @@
         </header>
         <section class="search">
             <form method="post" action="formulaire.php" class="form" >
-                <button class="form__button">
-                    <i class="fas fa-map-marker-alt"></i>
-                </button>
+        
+                <i class="fas fa-map-marker-alt"></i>
+             
                 <div class="form__place">
-                    <input type="search" name="recherche" placeholder="Paris, belleville" />
+                    <input type="search" name="recherche" placeholder="Paris, Belleville" />
                 </div>
             </form>
             <h1>
@@ -39,35 +40,35 @@
             <h2>
                 Fonctionnement
             </h2>
-            <ol>
-                <li class="tuto-step">
-                    <div class="tuto-step__logo">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
+            <div class="tutorial__list">
+                <div class="tuto-step">
+                    <p class="number">1</p>
+                    <i class="fas fa-mobile-alt"></i>
+                   
                     <p>
                         Choisissez un restaurant
                     </p>
-                </li>
-                <li class="tuto-step">
-                    <div class="tuto-step__logo">
-                        <i class="fas fa-list-ul"></i>
-                    </div>
+                </div>
+                <div class="tuto-step">
+                    <p class="number">2</p>
+                    <i class="fas fa-list-ul"></i>
+                    
                     <p>
                         Composez votre menu 
                     </p>
-                </li>
-                <li class="tuto-step">
-                    <div class="tuto-step__logo tuto-step__logo--color">
-                        <i class="fas fa-store"></i>
-                    </div>
+                </div>
+                <div class="tuto-step tuto-step--purple">
+                    <p class="number">3</p>
+                    <i class="fas fa-store"></i>
+                    
                     <p>
                         Dégustez au restaurant 
                     </p>
-                </li>
-            </ol>
+                </div>
+            </div>
 
         </section>
-        <main>
+        <main class="restaurant">
             <h2>
                 Restaurants 
             </h2>
@@ -89,9 +90,9 @@
                                     Ménilmontant
                                 </p>
                             </div>
-                            <div class="vignette-place__infos__like">
-                                <i class="far fa-heart"></i>
-                            </div>
+                            
+                            <i class="far fa-heart"></i>
+                            
                         </div>
                     </a>
                 </article>
@@ -112,9 +113,9 @@
                                     Charonne
                                 </p>
                             </div>
-                            <div class="vignette-place__infos__like">
-                                <i class="far fa-heart"></i>
-                            </div>
+                            
+                            <i class="far fa-heart"></i>
+                            
                         </div>
                     </a>
                 </article>
@@ -132,9 +133,9 @@
                                     Cité Rouge
                                 </p>
                             </div>
-                            <div class="vignette-place__infos__like">
-                                <i class="far fa-heart"></i>
-                            </div>
+                            
+                            <i class="far fa-heart"></i>
+                            
                         </div>
                     </a>
                 </article>
@@ -152,9 +153,9 @@
                                     Folie-Méricourt
                                 </p>
                             </div>
-                            <div class="vignette-place__infos__like">
-                                <i class="far fa-heart"></i>
-                            </div>
+                            
+                            <i class="far fa-heart"></i>
+                            
                         </div>
                     </a>
                 </article>
@@ -167,9 +168,9 @@
             <ul>
                 <li>
                     <a href="#">
-                        <div>
-                            <i class="fas fa-utensils"></i>
-                        </div>
+                        
+                        <i class="fas fa-utensils"></i>
+                        
                         <p>
                             Proposez un restaurant 
                         </p>
@@ -177,9 +178,9 @@
                 </li>
                 <li>
                     <a href="#">
-                        <div>
-                            <i class="fas fa-hands-helping"></i>
-                        </div>
+                        
+                        <i class="fas fa-hands-helping"></i>
+                        
                         <p>
                             Devenir partenaire
                         </p>

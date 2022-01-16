@@ -1,0 +1,25 @@
+.form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 0;
+    background-color: $form-color;
+        i {
+            margin-right: 22px;
+            font-size: 1.2em;
+        }
+        &__place {
+                input[type="search"] {
+                    border: none;
+                    background: none;
+                    width: 170px;
+                    font-size: $form-fsize;
+                    font-weight: 600;
+                    
+                    // margin-left: 1.5em;
+                        &::placeholder {
+                            color: black;
+                        }
+                }
+        }
+}
