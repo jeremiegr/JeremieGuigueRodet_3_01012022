@@ -1,0 +1,83 @@
+.background-restaurant {
+    background-color: $case-color;
+    // margin: none;
+}
+
+
+.restaurant {
+    padding: 40px 20px;
+    // max-width: 1440px;
+    // margin-left: auto;
+    // margin-right: auto;
+    
+        h2 {
+            margin-bottom: 40px;
+        }
+}
+
+// .vignette-place a {
+//     border-radius: 20px;
+// }
+
+.vignette-place {
+    height: 320px;
+    margin-bottom: 25px;
+    position: relative;
+    background-color: white;
+    // border-radius: 30px;
+    // border-radius: 50px;
+    border-radius: 20px;
+    @include vignettes-shadow;
+        &__image {
+            // border-radius: 50px;
+            // border-radius: 30px;
+            height: 70%;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 20px 20px 0 0;
+                    // border-radius: 30px;
+                }
+        }
+        &__new-alert {
+            position: absolute;
+            top: 18px;
+            right: 21px;
+            background-color: $alert-color;
+            color: $fontalert-color;
+            padding: 8px 14px;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        &__infos {
+            display: flex;
+            justify-content: space-between;
+            // height: 100%;
+            // background-color: yellow;
+            height: 30%;
+            align-items: center;
+            // padding-left: 20px;
+            // padding-top: 20px;
+            // text-decoration: none;
+                &__text {
+                    // padding-top: 20px;
+                    padding-left: 20px;
+                        h3 {
+                            margin-bottom: 8px;
+                            font-weight: bold;
+                            // text-decoration: none;
+                        }
+                }
+                i {
+                    // padding-top: 20px;
+                    padding-right: 25px;
+                    font-size: 30px;
+                    // font-weight: lighter;
+                }
+        }
+}
+
+
+
+

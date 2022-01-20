@@ -1,0 +1,38 @@
+.tutorial {
+    padding: 50px 20px;
+        h2 {
+            margin-bottom: 40px;
+        }
+        .tuto-step {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            // background-color: $case-color;
+            position: relative;
+            margin-left: 20px;
+            margin-bottom: 30px;
+            height: 92px;
+            border-radius: 30px;
+            @include vignettes-shadow;
+                .number{
+                    padding: 8px 12px;
+                    background-color: $primary-color;
+                    border-radius: 50px;
+                    color: white;
+                    position: absolute;
+                    left: -20px;
+                }
+                .fas {
+                    // padding: 0 36px;
+                    color: $fawesome-color;
+                    font-size: 25px;
+                        
+                }
+                p {
+                    font-weight: bold;
+                    font-size: 22px;
+                    padding-left: 20px;
+                    // margin-left: 10px;
+                }
+        }
+}

@@ -1,13 +1,25 @@
-
-
-.header__logo {
+header {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 20px 0;
-    box-shadow: 0px 2px 13px $shadow-color;
-    margin-bottom: 4px;
-    // max-width: 100%;
-        img {
-            width: 14em;
+    position: relative;
+        .header__logo {
+        font-family: "shrikhand";
+        font-size: 40px;
+    }
+}
+
+
+
+.header__back-accueil {
+    // display: flex;
+    // align-items: center;
+    background-color: purple;
+    justify-content: baseline;
+    position: absolute;
+    left: 20px;
+        i {
+            font-size: 27px;
         }
 }

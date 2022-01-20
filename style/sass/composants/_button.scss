@@ -1,6 +1,6 @@
 button {
     background: linear-gradient(-200deg, $secondary-color, $primary-color);
-    box-shadow: 1px 3px 5px $shadow-color;
+    @include vignettes-shadow;
     border: none;
     padding: 22px;
     font-size: 18px;

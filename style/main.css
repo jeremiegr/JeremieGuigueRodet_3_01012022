@@ -1,8 +1,70 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
-#main_body {
-  max-width: 1460px;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header, section, main, header, footer {
+  max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+a, p, h1, h2, h3 {
+  color: black;
 }
 
 body {
@@ -14,14 +76,14 @@ h1, h2 {
   font-weight: bold;
 }
 
-p {
+p, h3 {
   font-size: 23px;
 }
 
 button {
   background: linear-gradient(-200deg, #FF79DA, #9356DC);
-  -webkit-box-shadow: 1px 3px 5px #9c9c9e;
-          box-shadow: 1px 3px 5px #9c9c9e;
+  -webkit-box-shadow: 0px 3px 16px #9c9c9e;
+          box-shadow: 0px 3px 16px #9c9c9e;
   border: none;
   padding: 22px;
   font-size: 18px;
@@ -32,21 +94,36 @@ button {
   color: white;
 }
 
-.header__logo {
+header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 20px 0;
-  -webkit-box-shadow: 0px 2px 13px #9c9c9e;
-          box-shadow: 0px 2px 13px #9c9c9e;
-  margin-bottom: 4px;
+  position: relative;
 }
 
-.header__logo img {
-  width: 14em;
+header .header__logo {
+  font-family: "shrikhand";
+  font-size: 40px;
+}
+
+.header__back-accueil {
+  background-color: purple;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+  position: absolute;
+  left: 20px;
+}
+
+.header__back-accueil i {
+  font-size: 27px;
 }
 
 .form {
@@ -59,6 +136,8 @@ button {
   width: 100%;
   padding: 20px 0;
   background-color: #Eaeaea;
+  -webkit-box-shadow: inset 0px 3px 3px #9c9c9e;
+          box-shadow: inset 0px 3px 3px #9c9c9e;
 }
 
 .form i {
@@ -90,8 +169,50 @@ button {
   color: black;
 }
 
-.search {
+.background-footer {
+  background-color: #525252;
+}
+
+footer {
+  color: white;
+  padding: 30px 20px;
+}
+
+footer .footer__logo {
+  font-family: "shrikhand";
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+footer li {
+  margin-bottom: 10px;
+}
+
+footer li i {
+  color: white;
+  margin-right: 12px;
+}
+
+footer li p {
+  color: white;
+}
+
+footer li p:hover {
+  -webkit-text-decoration: underline white;
+          text-decoration: underline white;
+}
+
+.footer-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.background-search {
   background-color: #F5f5f5;
+}
+
+.search {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -119,7 +240,11 @@ button {
 }
 
 .tutorial {
-  padding: 40px 20px;
+  padding: 50px 20px;
+}
+
+.tutorial h2 {
+  margin-bottom: 40px;
 }
 
 .tutorial .tuto-step {
@@ -129,7 +254,9 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #F5f5f5;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
   margin-left: 20px;
   margin-bottom: 30px;
@@ -140,7 +267,7 @@ button {
 }
 
 .tutorial .tuto-step .number {
-  padding: 4px 12px;
+  padding: 8px 12px;
   background-color: #9356DC;
   border-radius: 50px;
   color: white;
@@ -149,7 +276,6 @@ button {
 }
 
 .tutorial .tuto-step .fas {
-  padding: 0 36px;
   color: #838383;
   font-size: 25px;
 }
@@ -157,21 +283,33 @@ button {
 .tutorial .tuto-step p {
   font-weight: bold;
   font-size: 22px;
+  padding-left: 20px;
+}
+
+.background-restaurant {
+  background-color: #F5f5f5;
 }
 
 .restaurant {
   padding: 40px 20px;
-  background-color: #F5f5f5;
+}
+
+.restaurant h2 {
+  margin-bottom: 40px;
 }
 
 .vignette-place {
-  height: 300px;
-  margin-bottom: 20px;
+  height: 320px;
+  margin-bottom: 25px;
   position: relative;
+  background-color: white;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 3px 16px #9c9c9e;
+          box-shadow: 0px 3px 16px #9c9c9e;
 }
 
 .vignette-place__image {
-  height: 50%;
+  height: 70%;
 }
 
 .vignette-place__image img {
@@ -179,16 +317,44 @@ button {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 20px 20px 0 0;
 }
 
 .vignette-place__new-alert {
   position: absolute;
-  top: 3px;
+  top: 18px;
   right: 21px;
   background-color: #B3fbcd;
   color: #5ca276;
   padding: 8px 14px;
   font-size: 16px;
   border-radius: 5px;
+}
+
+.vignette-place__infos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 30%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.vignette-place__infos__text {
+  padding-left: 20px;
+}
+
+.vignette-place__infos__text h3 {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.vignette-place__infos i {
+  padding-right: 25px;
+  font-size: 30px;
 }
 /*# sourceMappingURL=main.css.map */

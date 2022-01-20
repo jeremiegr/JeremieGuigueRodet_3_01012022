@@ -1,0 +1,38 @@
+.background-footer {
+    background-color: $footer-color;
+}
+
+// footer i, footer p {
+//     color: white;
+// }
+
+footer {
+    color: white;
+    padding: 30px 20px;
+        .footer__logo {
+            font-family: "shrikhand";
+            font-size: 25px;
+            margin-bottom: 30px;
+        }
+
+        li {
+            margin-bottom: 10px;
+                i {
+                color: white;
+                margin-right: 12px;
+            }
+                p {
+                    color: white;
+                        &:hover {
+                        text-decoration: underline white;
+                        // text-decoration-color: white;
+                    }
+                }
+                
+        }
+        
+}
+
+.footer-link {
+    display: flex;
+}

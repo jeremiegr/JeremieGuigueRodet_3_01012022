@@ -1,5 +1,20 @@
-#main_body {
-    max-width: 1460px;
+// #main_body {
+//     max-width: 1460px;
+//     margin-left: auto;
+//     margin-right: auto;
+    
+// }
+
+header, section, main, header, footer {
+    max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+a, p, h1, h2, h3 {
+    color: black;
 }

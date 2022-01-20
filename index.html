@@ -9,13 +9,15 @@
     <link rel="stylesheet" href="style/main.css"/> 
 </head>
 <body>
-    <div id="main_body">
+    <!-- <div id="main_body"> -->
         <header>
             <div class="header__logo">
-                <img src="images/ohmyfood.png" alt="logo de ohmyfood"/> 
+                ohmyfood 
             </div>
         </header>
-        <section class="search">
+       
+        <!-- <section class="search"> -->
+            
             <form method="post" action="formulaire.php" class="form" >
         
                 <i class="fas fa-map-marker-alt"></i>
@@ -24,6 +26,10 @@
                     <input type="search" name="recherche" placeholder="Paris, Belleville" />
                 </div>
             </form>
+        <!-- </section> -->
+    
+    <div class="background-search">
+        <section class="search">  
             <h1>
                 Réservez le menu qui vous convient
             </h1>
@@ -34,8 +40,10 @@
                 <button class="button-validation">
                     Explorez nos restaurants 
                 </button>
-            </a>   
-        </section>
+            </a>
+        </section>        
+    </div>     
+    <div class="background-tutorial">  
         <section class="tutorial">
             <h2>
                 Fonctionnement
@@ -68,7 +76,10 @@
             </div>
 
         </section>
+    </div>
+    <div class="background-restaurant">
         <main class="restaurant">
+            
             <h2>
                 Restaurants 
             </h2>
@@ -160,30 +171,35 @@
                     </a>
                 </article>
             </div>
+        
         </main>
+    </div>
+    <div class="background-footer">
         <footer>
             <div class="footer__logo">
-                <img src="images/ohmyfood.png" alt="logo de ohmyfood"/>
+                ohmyfood 
             </div>
             <ul>
                 <li>
                     <a href="#">
-                        
+                        <div class="footer-link">
                         <i class="fas fa-utensils"></i>
                         
                         <p>
                             Proposez un restaurant 
                         </p>
+                        </div>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        
+                        <div class="footer-link">
                         <i class="fas fa-hands-helping"></i>
                         
                         <p>
                             Devenir partenaire
                         </p>
+                        </div>
                     </a>
                 </li>
                 <li>

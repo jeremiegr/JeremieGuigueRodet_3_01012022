@@ -1,9 +1,14 @@
+
+
+
+
 .form {
     display: flex;
     justify-content: center;
     width: 100%;
     padding: 20px 0;
     background-color: $form-color;
+    box-shadow: inset 0px 3px 3px $shadow-color;
         i {
             margin-right: 22px;
             font-size: 1.2em;
