@@ -76,8 +76,12 @@ h1, h2 {
   font-weight: bold;
 }
 
-p, h3 {
+h3 {
   font-size: 23px;
+}
+
+p {
+  font-size: 20px;
 }
 
 button {
@@ -92,6 +96,7 @@ button {
   margin: 0;
   margin-bottom: 65px;
   color: white;
+  cursor: pointer;
 }
 
 header {
@@ -114,7 +119,6 @@ header .header__logo {
 }
 
 .header__back-accueil {
-  background-color: purple;
   -webkit-box-pack: baseline;
       -ms-flex-pack: baseline;
           justify-content: baseline;
@@ -206,6 +210,156 @@ footer li p:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.intro-menu {
+  position: relative;
+}
+
+.intro-menu .photo-menu {
+  height: 440px;
+  width: 100%;
+}
+
+.intro-menu .photo-menu img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.intro-menu .title {
+  background-color: #F5f5f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 30px 30px 0 0;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+.intro-menu .title h1 {
+  font-family: "shrikhand";
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 25px;
+}
+
+.intro-menu .title i {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-right: 40px;
+  font-size: 27px;
+  color: #393939;
+}
+
+.part-menu {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 40px;
+}
+
+.part-menu h2 {
+  font-size: 22px;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  color: #393939;
+}
+
+.part-menu .underline-title {
+  width: 55px;
+  height: 4px;
+  background-color: #B3fbcd;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.conteneur-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.part-menu__choice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: white;
+  margin-bottom: 15px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 3px 16px #9c9c9e;
+          box-shadow: 0px 3px 16px #9c9c9e;
+  cursor: pointer;
+}
+
+.part-menu__choice__description {
+  padding: 17px 13px;
+}
+
+.part-menu__choice__description h3 {
+  font-weight: bold;
+  padding-bottom: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 230px;
+}
+
+.part-menu__choice__description p {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #393939;
+  width: 230px;
+}
+
+.part-menu__choice__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.part-menu__choice__price p {
+  font-weight: bold;
+  font-size: 18px;
+  padding-right: 20px;
+  padding-bottom: 17px;
+  padding-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.part-menu__choice__price i {
+  color: white;
+  background-color: #B3fbcd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0 20px 20px 0;
+  font-size: 23px;
+  padding-right: 17px;
+  padding-left: 17px;
 }
 
 .background-search {
@@ -349,8 +503,12 @@ footer li p:hover {
 }
 
 .vignette-place__infos__text h3 {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   font-weight: bold;
+}
+
+.vignette-place__infos__text p {
+  color: #393939;
 }
 
 .vignette-place__infos i {
