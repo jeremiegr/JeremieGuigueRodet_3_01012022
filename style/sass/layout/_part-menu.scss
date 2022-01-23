@@ -1,35 +1,59 @@
-
-.part-menu {
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-bottom: 40px;
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-    // min-width: 300px;
-        h2 {
-            font-size: 22px;
-            font-weight: normal;
-            text-transform: uppercase;
-            margin-bottom: 8px;
-            color: $falternate-color;
+.menu {
+    @include desktop {
+        display: flex;
+        justify-content: space-between;
+    }
+        .part-menu {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 40px;
+        @include desktop {
+            width: 32%;
         }
-        .underline-title {
-            width: 55px;
-            height: 4px;
-            background-color: $alert-color;
-            display: block;
-            margin-bottom: 15px;
-        }
-        
+            h2 {
+                font-size: 22px;
+                font-weight: normal;
+                text-transform: uppercase;
+                margin-bottom: 8px;
+                color: $falternate-color;
+                @include tab-big {
+                    font-size: 25px;
+                    margin-bottom: 10px;
+                }
+            }
+            .underline-title {
+                width: 55px;
+                height: 4px;
+                background-color: $alert-color;
+                display: block;
+                margin-bottom: 15px;
+                @include tab-big {
+                    margin-bottom: 30px;
+                    width: 65px;
+                    height: 5px;
+                }
+            }
+            .menu-group {
+                @include tab-big {
+                display: flex;
+                justify-content: space-between; 
+                }
+                @include desktop {
+                    display: inherit;
+                }
+            }
+    }
 }
+
 
 .conteneur-button {
             display: flex;
             justify-content: center;
-            // width: 300px;
-            // height: 300px;
-            // background-color: black;
+                button {
+                    @include tab-big {
+                        font-size: 30px;
+                    }
+                }
         }
 
 .part-menu__choice {
@@ -37,41 +61,86 @@
             justify-content: space-between;
             background-color: white;
             margin-bottom: 15px;
-            // padding: 17px 13px;
             border-radius: 20px;
             @include vignettes-shadow;
             cursor: pointer;
-            // width: 100%;
-            // max-width: 300px;
+            @include tab-big {
+                width: 32%;
+                margin-bottom: 0;
+            }
+            @include desktop {
+                width: auto;
+                margin-bottom: 15px;
+            }
                 &__description {
-                    // width: 100px;
-                    // width: 70%;
                     padding: 17px 13px;
-                    // flex-wrap: 2;
                         h3 {
                             font-weight: bold;
                             padding-bottom: 10px;
                             text-overflow: ellipsis;
                             white-space: nowrap;
                             overflow: hidden;
-                            width: 230px;
+                            width: 240px;
+                            font-size: 18px;
+                            @include mobile-big{
+                                font-size: 20px;
+                                width: 260px;
+                            }
+                            @include tab-little{
+                                width: 300px;
+                                font-size: 22px;
+                            }
+                            @include tab-big {
+                                white-space: inherit;
+                                // overflow: inherit;
+                                width: auto;
+                                font-size: 18px;
+                            }
+                            @include desktop {
+                                white-space: nowrap;
+                                width: 220px;
+                                font-size: 19px;
+                            }
+
                         }
                         p {
                             text-overflow: ellipsis;
                             white-space: nowrap;
                             overflow: hidden;
                             color: $falternate-color;
-                            width: 230px;
-                            // width: 70%;
+                            width: 240px;
+                            font-size: 14px;
+                            @include mobile-big{
+                                font-size: 16px;
+                                width: 260px;
+                            }
+                            @include tab-little{
+                                width: 300px;
+                                font-size: 18px;
+                            }
+                            @include tab-big {
+                                white-space: inherit;
+                                // overflow: inherit;
+                                width: auto;
+                                font-size: 15px;
+                            }
+                            @include desktop {
+                                white-space: nowrap;
+                                width: 220px;
+                                font-size: 16px;
+                            }
                         }
                 }
                 &__price {
-                    // width: 30%;
                     display: flex;
-                    // right: 50px;
-                    // position: absolute;
-                    // right: auto;
-                    // width: 40%;
+                    @include tab-big {
+                        flex-direction: column-reverse;
+                        justify-content: space-between;
+                    }
+                    @include desktop {
+                        flex-direction: row;
+                        justify-content: inherit;
+                    }
                         p {
                             font-weight: bold;
                             font-size: 18px;
@@ -80,9 +149,9 @@
                             padding-left: 10px;
                             display: flex;
                             align-items: flex-end;
-                            // background-color: yellow;
-                            // overflow: hidden;
-                            
+                            @include desktop {
+                                font-size: 15px;
+                            }
                         }
                         i {
                             color: white;
@@ -95,9 +164,17 @@
                             padding-right: 17px;
                             padding-left: 17px;
                             // display: none;
-                            // width: 50px
-                            // object-fit: cover;
+                            @include tab-big {
+                                // padding: 20px;
+                                height: 50%;
+                                border-radius: 0 20px 0 0;
+                            }
+                            @include desktop {
+                                height: auto;
+                                border-radius: 0 20px 20px 0;
+                            }
                         }
-                }
                 
-        }
+                }
+
+    }

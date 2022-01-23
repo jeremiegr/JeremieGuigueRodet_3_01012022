@@ -2,10 +2,6 @@
     background-color: $footer-color;
 }
 
-// footer i, footer p {
-//     color: white;
-// }
-
 footer {
     color: white;
     padding: 30px 20px;
@@ -14,23 +10,38 @@ footer {
             font-size: 25px;
             margin-bottom: 30px;
         }
-
-        li {
-            margin-bottom: 10px;
-                i {
-                color: white;
-                margin-right: 12px;
+        ul {
+            @include tab-big {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
             }
-                p {
-                    color: white;
-                        &:hover {
-                        text-decoration: underline white;
-                        // text-decoration-color: white;
-                    }
+                li {
+                margin-bottom: 10px;
+                @include tab-big {
+                    width: 40%;
                 }
-                
-        }
-        
+
+                    i {
+                    color: white;
+                    margin-right: 12px;
+                    }
+                    p {
+                        color: white;
+                            &:hover {
+                            text-decoration: underline white;
+                            // text-decoration-color: white;
+                        }
+                    }
+                    
+                }
+        }       
+}
+
+.order {
+    @include tab-big {
+        order: -1;
+    }
 }
 
 .footer-link {

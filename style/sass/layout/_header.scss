@@ -7,6 +7,12 @@ header {
         .header__logo {
         font-family: "shrikhand";
         font-size: 40px;
+        @include tab-big {
+            font-size: 45px;
+        }
+        @include desktop {
+            font-size: 50px;
+        }
     }
 }
 

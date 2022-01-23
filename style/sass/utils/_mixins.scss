@@ -1,3 +1,27 @@
 @mixin vignettes-shadow {
     box-shadow: 0px 3px 16px $shadow-color;
 }
+
+@mixin mobile-big {
+    @media screen and (min-width: map-get($breakpoints, mobile)){
+        @content;
+    }    
+}
+
+@mixin tab-little {
+    @media screen and (min-width: map-get($breakpoints, tabm)){
+        @content;
+    }    
+}
+
+@mixin tab-big {
+    @media screen and (min-width: map-get($breakpoints, tab)){
+        @content;
+    }    
+}
+
+@mixin desktop {
+    @media screen and (min-width: map-get($breakpoints, desk)){
+        @content;
+    }    
+}

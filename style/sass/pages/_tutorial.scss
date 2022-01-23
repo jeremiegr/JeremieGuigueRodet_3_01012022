@@ -3,36 +3,86 @@
         h2 {
             margin-bottom: 40px;
         }
-        .tuto-step {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            // background-color: $case-color;
-            position: relative;
-            margin-left: 20px;
-            margin-bottom: 30px;
-            height: 92px;
-            border-radius: 30px;
-            @include vignettes-shadow;
-                .number{
-                    padding: 8px 12px;
-                    background-color: $primary-color;
-                    border-radius: 50px;
-                    color: white;
-                    position: absolute;
-                    left: -20px;
+    @include tab-big {
+        padding: 50px 0 50px 20px;
+    }
+    .tutorial__list {
+    @include tab-big {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+  
+            .tuto-step {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                // background-color: $case-color;
+                position: relative;
+                margin-left: 20px;
+                margin-bottom: 30px;
+                height: 92px;
+                border-radius: 30px;
+                @include tab-big {
+                    height: auto;
+                    padding: 25px;
+                    margin-right: 20px;
                 }
-                .fas {
-                    // padding: 0 36px;
-                    color: $fawesome-color;
-                    font-size: 25px;
-                        
+                @include desktop {
+                    padding: 25px 36px;
                 }
-                p {
-                    font-weight: bold;
-                    font-size: 22px;
-                    padding-left: 20px;
-                    // margin-left: 10px;
+                @include vignettes-shadow;
+                    .number {
+                        padding: 8px 12px;
+                        background-color: $primary-color;
+                        border-radius: 50px;
+                        color: white;
+                        position: absolute;
+                        left: -20px;
+                    }
+                    .fas {
+                        // padding: 0 36px;
+                        color: $fawesome-color;
+                        font-size: 20px;
+                        @include mobile-big {
+                            font-size: 22px;
+                        }
+                        @include tab-little {
+                            font-size: 25px;
+                        }
+                        @include tab-big {
+                            font-size: 20px;
+                            margin-left: 20px;
+                        }
+                        @include desktop {
+                            font-size: 24px;
+                            margin-left: 15px;
+                        }
+                            
+                    }
+                    p {
+                        font-weight: bold;
+                        font-size: 19px;
+                        padding-left: 20px;
+                        @include mobile-big {
+                            font-size: 22px;
+                        }
+                        @include tab-little {
+                            font-size: 25px;
+                            padding-left: 35px;
+                        }
+                        @include tab-big {
+                            font-size: 20px;
+                            text-align: center;
+                            padding-left: 10px;
+                        }
+                        @include desktop {
+                            font-size: 22px;
+                            padding-left: 20px;
+                        }
+                        // margin-left: 10px;
+                    }
                 }
-        }
+    }     
 }
+

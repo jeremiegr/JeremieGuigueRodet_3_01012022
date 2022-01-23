@@ -118,6 +118,18 @@ header .header__logo {
   font-size: 40px;
 }
 
+@media screen and (min-width: 809px) {
+  header .header__logo {
+    font-size: 45px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header .header__logo {
+    font-size: 50px;
+  }
+}
+
 .header__back-accueil {
   -webkit-box-pack: baseline;
       -ms-flex-pack: baseline;
@@ -188,22 +200,49 @@ footer .footer__logo {
   margin-bottom: 30px;
 }
 
-footer li {
+@media screen and (min-width: 809px) {
+  footer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+footer ul li {
   margin-bottom: 10px;
 }
 
-footer li i {
+@media screen and (min-width: 809px) {
+  footer ul li {
+    width: 40%;
+  }
+}
+
+footer ul li i {
   color: white;
   margin-right: 12px;
 }
 
-footer li p {
+footer ul li p {
   color: white;
 }
 
-footer li p:hover {
+footer ul li p:hover {
   -webkit-text-decoration: underline white;
           text-decoration: underline white;
+}
+
+@media screen and (min-width: 809px) {
+  .order {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
 }
 
 .footer-link {
@@ -249,6 +288,12 @@ footer li p:hover {
   padding-left: 25px;
 }
 
+@media screen and (min-width: 809px) {
+  .intro-menu .title h1 {
+    font-size: 35px;
+  }
+}
+
 .intro-menu .title i {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -257,13 +302,36 @@ footer li p:hover {
   color: #393939;
 }
 
-.part-menu {
+@media screen and (min-width: 809px) {
+  .intro-menu .title i {
+    font-size: 34px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.menu .part-menu {
   padding-left: 20px;
   padding-right: 20px;
   margin-bottom: 40px;
 }
 
-.part-menu h2 {
+@media screen and (min-width: 1200px) {
+  .menu .part-menu {
+    width: 32%;
+  }
+}
+
+.menu .part-menu h2 {
   font-size: 22px;
   font-weight: normal;
   text-transform: uppercase;
@@ -271,12 +339,44 @@ footer li p:hover {
   color: #393939;
 }
 
-.part-menu .underline-title {
+@media screen and (min-width: 809px) {
+  .menu .part-menu h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+}
+
+.menu .part-menu .underline-title {
   width: 55px;
   height: 4px;
   background-color: #B3fbcd;
   display: block;
   margin-bottom: 15px;
+}
+
+@media screen and (min-width: 809px) {
+  .menu .part-menu .underline-title {
+    margin-bottom: 30px;
+    width: 65px;
+    height: 5px;
+  }
+}
+
+@media screen and (min-width: 809px) {
+  .menu .part-menu .menu-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu .part-menu .menu-group {
+    display: inherit;
+  }
 }
 
 .conteneur-button {
@@ -286,6 +386,12 @@ footer li p:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media screen and (min-width: 809px) {
+  .conteneur-button button {
+    font-size: 30px;
+  }
 }
 
 .part-menu__choice {
@@ -303,6 +409,20 @@ footer li p:hover {
   cursor: pointer;
 }
 
+@media screen and (min-width: 809px) {
+  .part-menu__choice {
+    width: 32%;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .part-menu__choice {
+    width: auto;
+    margin-bottom: 15px;
+  }
+}
+
 .part-menu__choice__description {
   padding: 17px 13px;
 }
@@ -313,7 +433,38 @@ footer li p:hover {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  width: 230px;
+  width: 240px;
+  font-size: 18px;
+}
+
+@media screen and (min-width: 421px) {
+  .part-menu__choice__description h3 {
+    font-size: 20px;
+    width: 260px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .part-menu__choice__description h3 {
+    width: 300px;
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 809px) {
+  .part-menu__choice__description h3 {
+    white-space: inherit;
+    width: auto;
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .part-menu__choice__description h3 {
+    white-space: nowrap;
+    width: 220px;
+    font-size: 19px;
+  }
 }
 
 .part-menu__choice__description p {
@@ -321,13 +472,68 @@ footer li p:hover {
   white-space: nowrap;
   overflow: hidden;
   color: #393939;
-  width: 230px;
+  width: 240px;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 421px) {
+  .part-menu__choice__description p {
+    font-size: 16px;
+    width: 260px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .part-menu__choice__description p {
+    width: 300px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 809px) {
+  .part-menu__choice__description p {
+    white-space: inherit;
+    width: auto;
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .part-menu__choice__description p {
+    white-space: nowrap;
+    width: 220px;
+    font-size: 16px;
+  }
 }
 
 .part-menu__choice__price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media screen and (min-width: 809px) {
+  .part-menu__choice__price {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .part-menu__choice__price {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: inherit;
+        -ms-flex-pack: inherit;
+            justify-content: inherit;
+  }
 }
 
 .part-menu__choice__price p {
@@ -342,6 +548,12 @@ footer li p:hover {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+}
+
+@media screen and (min-width: 1200px) {
+  .part-menu__choice__price p {
+    font-size: 15px;
+  }
 }
 
 .part-menu__choice__price i {
@@ -362,6 +574,20 @@ footer li p:hover {
   padding-left: 17px;
 }
 
+@media screen and (min-width: 809px) {
+  .part-menu__choice__price i {
+    height: 50%;
+    border-radius: 0 20px 0 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .part-menu__choice__price i {
+    height: auto;
+    border-radius: 0 20px 20px 0;
+  }
+}
+
 .background-search {
   background-color: #F5f5f5;
 }
@@ -380,17 +606,90 @@ footer li p:hover {
   text-align: center;
 }
 
-.search h1 {
+@media screen and (min-width: 809px) {
+  .search {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 30px 0 30px 20px;
+  }
+}
+
+@media screen and (min-width: 809px) {
+  .search .search-description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
+.search .search-description h1 {
   margin-top: 40px;
   margin-bottom: 0;
   padding: 0 60px;
 }
 
-.search p {
+@media screen and (min-width: 809px) {
+  .search .search-description h1 {
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-size: 27px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .search .search-description h1 {
+    font-size: 32px;
+  }
+}
+
+.search .search-description p {
   padding: 0 30px;
   margin-top: 15px;
-  font-weight: lighter;
   margin-bottom: 35px;
+}
+
+@media screen and (min-width: 809px) {
+  .search .search-description p {
+    margin: 0;
+    padding: 0;
+    font-size: 17px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .search .search-description p {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 809px) {
+  .search-button button {
+    margin-bottom: 0;
+    font-size: 15px;
+    margin-right: 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .search-button button {
+    font-size: 20px;
+    margin-right: 130px;
+  }
 }
 
 .tutorial {
@@ -401,7 +700,24 @@ footer li p:hover {
   margin-bottom: 40px;
 }
 
-.tutorial .tuto-step {
+@media screen and (min-width: 809px) {
+  .tutorial {
+    padding: 50px 0 50px 20px;
+  }
+}
+
+@media screen and (min-width: 809px) {
+  .tutorial .tutorial__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.tutorial .tutorial__list .tuto-step {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -420,7 +736,21 @@ footer li p:hover {
           box-shadow: 0px 3px 16px #9c9c9e;
 }
 
-.tutorial .tuto-step .number {
+@media screen and (min-width: 809px) {
+  .tutorial .tutorial__list .tuto-step {
+    height: auto;
+    padding: 25px;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .tutorial .tutorial__list .tuto-step {
+    padding: 25px 36px;
+  }
+}
+
+.tutorial .tutorial__list .tuto-step .number {
   padding: 8px 12px;
   background-color: #9356DC;
   border-radius: 50px;
@@ -429,15 +759,69 @@ footer li p:hover {
   left: -20px;
 }
 
-.tutorial .tuto-step .fas {
+.tutorial .tutorial__list .tuto-step .fas {
   color: #838383;
-  font-size: 25px;
+  font-size: 20px;
 }
 
-.tutorial .tuto-step p {
+@media screen and (min-width: 421px) {
+  .tutorial .tutorial__list .tuto-step .fas {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .tutorial .tutorial__list .tuto-step .fas {
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 809px) {
+  .tutorial .tutorial__list .tuto-step .fas {
+    font-size: 20px;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .tutorial .tutorial__list .tuto-step .fas {
+    font-size: 24px;
+    margin-left: 15px;
+  }
+}
+
+.tutorial .tutorial__list .tuto-step p {
   font-weight: bold;
-  font-size: 22px;
+  font-size: 19px;
   padding-left: 20px;
+}
+
+@media screen and (min-width: 421px) {
+  .tutorial .tutorial__list .tuto-step p {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .tutorial .tutorial__list .tuto-step p {
+    font-size: 25px;
+    padding-left: 35px;
+  }
+}
+
+@media screen and (min-width: 809px) {
+  .tutorial .tutorial__list .tuto-step p {
+    font-size: 20px;
+    text-align: center;
+    padding-left: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .tutorial .tutorial__list .tuto-step p {
+    font-size: 22px;
+    padding-left: 20px;
+  }
 }
 
 .background-restaurant {
@@ -446,6 +830,19 @@ footer li p:hover {
 
 .restaurant {
   padding: 40px 20px;
+}
+
+@media screen and (min-width: 809px) {
+  .restaurant .restaurant-orga {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .restaurant h2 {
@@ -460,6 +857,19 @@ footer li p:hover {
   border-radius: 20px;
   -webkit-box-shadow: 0px 3px 16px #9c9c9e;
           box-shadow: 0px 3px 16px #9c9c9e;
+}
+
+@media screen and (min-width: 809px) {
+  .vignette-place {
+    width: 48%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .vignette-place {
+    width: 47%;
+    margin-bottom: 60px;
+  }
 }
 
 .vignette-place__image {
@@ -507,12 +917,30 @@ footer li p:hover {
   font-weight: bold;
 }
 
+@media screen and (min-width: 1200px) {
+  .vignette-place__infos__text h3 {
+    font-size: 30px;
+  }
+}
+
 .vignette-place__infos__text p {
   color: #393939;
+}
+
+@media screen and (min-width: 1200px) {
+  .vignette-place__infos__text p {
+    font-size: 25px;
+  }
 }
 
 .vignette-place__infos i {
   padding-right: 25px;
   font-size: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .vignette-place__infos i {
+    font-size: 30px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
