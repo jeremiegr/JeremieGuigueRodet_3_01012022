@@ -1,0 +1,7 @@
+.fa-heart {
+    // background-color: black;
+    // display: block;
+    &:hover {
+        background: linear-gradient(-200deg, $secondary-color, $primary-color);
+    }
+}

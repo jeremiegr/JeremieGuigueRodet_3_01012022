@@ -1,4 +1,5 @@
 .menu {
+    padding-top: 35px;
     @include desktop {
         display: flex;
         justify-content: space-between;
