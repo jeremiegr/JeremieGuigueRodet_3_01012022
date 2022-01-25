@@ -1,13 +1,21 @@
 .menu {
     padding-top: 35px;
-    @include desktop {
+    @include tab-big {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    @include desktop {
+        flex-wrap: inherit;
     }
         .part-menu {
         padding-left: 20px;
         padding-right: 20px;
         margin-bottom: 40px;
+        @include tab-big {
+            width: 44%;
+            
+        }
         @include desktop {
             width: 32%;
         }
@@ -17,10 +25,6 @@
                 text-transform: uppercase;
                 margin-bottom: 8px;
                 color: $falternate-color;
-                @include tab-big {
-                    font-size: 25px;
-                    margin-bottom: 10px;
-                }
             }
             .underline-title {
                 width: 55px;
@@ -28,24 +32,9 @@
                 background-color: $alert-color;
                 display: block;
                 margin-bottom: 15px;
-                @include tab-big {
-                    margin-bottom: 30px;
-                    width: 65px;
-                    height: 5px;
-                }
-            }
-            .menu-group {
-                @include tab-big {
-                display: flex;
-                justify-content: space-between; 
-                }
-                @include desktop {
-                    display: inherit;
-                }
             }
     }
 }
-
 
 .conteneur-button {
             display: flex;
@@ -57,96 +46,134 @@
                 }
         }
 
+.content {
+    // background-color: blue;
+    height: 80px;
+    width: 100%;
+    background-color: white;
+    // background-color: blue;
+    margin-bottom: 15px;
+    position: relative;
+    border-radius: 20px;
+    cursor: pointer;
+    overflow: hidden;
+    @include vignettes-shadow;
+    // padding-right: 20px;
+        // &:hover {
+        //     padding-right: 20px;
+        // }
+
+            span {
+                background-color: $alert-color;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 0 20px 20px 0;
+                        position: absolute;
+                        height: 100%;
+                        // width: 60px;
+                        top: 0;
+                        right: -60px;
+                        transition: right 180ms ease-in-out;
+                    i {
+                        color: white;
+                        rotate: 180deg;
+                        font-size: 23px;
+                        padding-right: 17px;
+                        padding-left: 17px;
+                        transition: transform 300ms ease-in-out;
+                        // @include desktop {
+                        //     height: auto;
+                        //     border-radius: 0 20px 20px 0;
+                        // }
+                    }
+
+            }
+    
+}
+
 .part-menu__choice {
             display: flex;
             justify-content: space-between;
-            background-color: white;
-            margin-bottom: 15px;
+            // align-items: stretch;
+            // background-color: white;
+            // margin-bottom: 15px;
             border-radius: 20px;
-            @include vignettes-shadow;
-            cursor: pointer;
-            @include tab-big {
-                width: 32%;
-                margin-bottom: 0;
-            }
-            @include desktop {
-                width: auto;
-                margin-bottom: 15px;
-            }
+            height: 100%;
+            // padding-right: 40px;
+            // @include vignettes-shadow;
+            // padding-right: 20px;
+            transition: padding-right 230ms ease-in-out;
+                &:hover {
+                    padding-right: 50px;
+                        &+ span {
+                            right: 0;
+                            // transform: rotate(-90deg);
+                                &> i {
+                                    transform: rotate(-180deg);
+                                }
+                        }
+                }
+            overflow: hidden;
                 &__description {
-                    padding: 17px 13px;
+                    // padding: 17px 13px;
+                    // width: 65%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    padding-left: 15px;
                         h3 {
                             font-weight: bold;
                             padding-bottom: 10px;
                             text-overflow: ellipsis;
-                            white-space: nowrap;
                             overflow: hidden;
-                            width: 240px;
-                            font-size: 18px;
+                            font-size: 17px;
                             @include mobile-big{
                                 font-size: 20px;
-                                width: 260px;
                             }
                             @include tab-little{
-                                width: 300px;
                                 font-size: 22px;
                             }
                             @include tab-big {
-                                white-space: inherit;
-                                // overflow: inherit;
-                                width: auto;
                                 font-size: 18px;
                             }
                             @include desktop {
-                                white-space: nowrap;
-                                width: 220px;
                                 font-size: 19px;
                             }
-
                         }
                         p {
                             text-overflow: ellipsis;
-                            white-space: nowrap;
                             overflow: hidden;
                             color: $falternate-color;
-                            width: 240px;
                             font-size: 14px;
                             @include mobile-big{
                                 font-size: 16px;
-                                width: 260px;
                             }
                             @include tab-little{
-                                width: 300px;
                                 font-size: 18px;
                             }
                             @include tab-big {
-                                white-space: inherit;
-                                // overflow: inherit;
-                                width: auto;
                                 font-size: 15px;
                             }
                             @include desktop {
-                                white-space: nowrap;
-                                width: 220px;
                                 font-size: 16px;
                             }
                         }
                 }
                 &__price {
                     display: flex;
-                    @include tab-big {
-                        flex-direction: column-reverse;
-                        justify-content: space-between;
-                    }
+                    transition: transform 1s ease-in-out;
                     @include desktop {
                         flex-direction: row;
                         justify-content: inherit;
                     }
                         p {
                             font-weight: bold;
-                            font-size: 18px;
+                            font-size: 17px;
                             padding-right: 20px;
-                            padding-bottom: 17px;
+                            padding-bottom: 20px;
                             padding-left: 10px;
                             display: flex;
                             align-items: flex-end;
@@ -154,28 +181,23 @@
                                 font-size: 15px;
                             }
                         }
-                        i {
-                            color: white;
-                            background-color: $alert-color;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            border-radius: 0 20px 20px 0;
-                            font-size: 23px;
-                            padding-right: 17px;
-                            padding-left: 17px;
-                            // display: none;
-                            @include tab-big {
-                                // padding: 20px;
-                                height: 50%;
-                                border-radius: 0 20px 0 0;
-                            }
-                            @include desktop {
-                                height: auto;
-                                border-radius: 0 20px 20px 0;
-                            }
-                        }
+                        // i {
+                        //     color: white;
+                        //     background-color: $alert-color;
+                        //     display: flex;
+                        //     justify-content: center;
+                        //     align-items: center;
+                        //     border-radius: 0 20px 20px 0;
+                        //     font-size: 23px;
+                        //     padding-right: 17px;
+                        //     padding-left: 17px;
+                        //     @include desktop {
+                        //         height: auto;
+                        //         border-radius: 0 20px 20px 0;
+                        //     }
+                        // }
                 
                 }
 
     }
+    
