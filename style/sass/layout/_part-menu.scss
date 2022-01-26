@@ -46,23 +46,46 @@
                 }
         }
 
+.menu-group {
+    
+        .content {
+            opacity: 1;
+            animation: apparition 1500ms cubic-bezier(.21,.95,.33,.99) 200ms;
+            animation-fill-mode: backwards;
+                & + .content {
+                    opacity: 1;
+                    animation-delay: 400ms;
+                    animation-fill-mode: backwards;
+                        & + .content {
+                            opacity: 1;
+                            animation-delay: 600ms;
+                            animation-fill-mode: backwards;
+                        }
+                }
+        }
+}
+
+
+@keyframes apparition {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 .content {
-    // background-color: blue;
     height: 80px;
     width: 100%;
     background-color: white;
-    // background-color: blue;
     margin-bottom: 15px;
     position: relative;
     border-radius: 20px;
     cursor: pointer;
     overflow: hidden;
     @include vignettes-shadow;
-    // padding-right: 20px;
-        // &:hover {
-        //     padding-right: 20px;
-        // }
-
             span {
                 background-color: $alert-color;
                         display: flex;
@@ -71,7 +94,6 @@
                         border-radius: 0 20px 20px 0;
                         position: absolute;
                         height: 100%;
-                        // width: 60px;
                         top: 0;
                         right: -60px;
                         transition: right 180ms ease-in-out;
@@ -82,10 +104,6 @@
                         padding-right: 17px;
                         padding-left: 17px;
                         transition: transform 300ms ease-in-out;
-                        // @include desktop {
-                        //     height: auto;
-                        //     border-radius: 0 20px 20px 0;
-                        // }
                     }
 
             }
@@ -95,20 +113,13 @@
 .part-menu__choice {
             display: flex;
             justify-content: space-between;
-            // align-items: stretch;
-            // background-color: white;
-            // margin-bottom: 15px;
             border-radius: 20px;
             height: 100%;
-            // padding-right: 40px;
-            // @include vignettes-shadow;
-            // padding-right: 20px;
             transition: padding-right 230ms ease-in-out;
                 &:hover {
                     padding-right: 50px;
                         &+ span {
                             right: 0;
-                            // transform: rotate(-90deg);
                                 &> i {
                                     transform: rotate(-180deg);
                                 }
@@ -116,8 +127,6 @@
                 }
             overflow: hidden;
                 &__description {
-                    // padding: 17px 13px;
-                    // width: 65%;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
@@ -181,21 +190,6 @@
                                 font-size: 15px;
                             }
                         }
-                        // i {
-                        //     color: white;
-                        //     background-color: $alert-color;
-                        //     display: flex;
-                        //     justify-content: center;
-                        //     align-items: center;
-                        //     border-radius: 0 20px 20px 0;
-                        //     font-size: 23px;
-                        //     padding-right: 17px;
-                        //     padding-left: 17px;
-                        //     @include desktop {
-                        //         height: auto;
-                        //         border-radius: 0 20px 20px 0;
-                        //     }
-                        // }
                 
                 }
 
