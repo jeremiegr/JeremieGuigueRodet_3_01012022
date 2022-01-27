@@ -2,7 +2,6 @@
     background-color: $case-color;
 }
 
-
 .restaurant {
     padding: 40px 20px;
         .restaurant-orga {
@@ -12,8 +11,6 @@
             flex-wrap: wrap;
             }   
         }
-   
-    
         h2 {
             margin-bottom: 40px;
         }
@@ -26,6 +23,8 @@
     background-color: white;
     border-radius: 20px;
     @include vignettes-shadow;
+    z-index: 1;
+    // opacity: 0.;
     @include tab-big {
         width: 48%;   
     }
@@ -33,6 +32,12 @@
         width: 47%;
         margin-bottom: 60px;
     }
+    &:hover {
+        &::after {
+            opacity: 1;
+        }
+    }
+    
         &__image {
             height: 70%;
                 img {
@@ -80,6 +85,21 @@
                         font-size: 30px;
                     }
                 }
+        }
+        &::after {
+            position: absolute;
+            top: 0 ;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            // box-shadow: 0px 3px 16px black;
+            @include vignettes-shadow;
+            opacity: 0;
+            z-index: -1;
+            transition: opacity 250ms;
+            // background-color: blue;
+            content: "";
+            border-radius: 20px;
         }
 }
 

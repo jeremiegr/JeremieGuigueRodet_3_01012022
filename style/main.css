@@ -84,7 +84,16 @@ p {
   font-size: 20px;
 }
 
-button {
+.conteneur-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.button-validation {
   background: linear-gradient(-200deg, #FF79DA, #9356DC);
   -webkit-box-shadow: 0px 3px 16px #9c9c9e;
           box-shadow: 0px 3px 16px #9c9c9e;
@@ -97,6 +106,34 @@ button {
   margin-bottom: 65px;
   color: white;
   cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+@media screen and (min-width: 809px) {
+  .button-validation {
+    font-size: 30px;
+  }
+}
+
+.button-validation:hover::after {
+  opacity: 1;
+}
+
+.button-validation::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-box-shadow: 0px 3px 16px #9c9c9e;
+          box-shadow: 0px 3px 16px #9c9c9e;
+  opacity: 0;
+  z-index: -1;
+  -webkit-transition: opacity 250ms;
+  transition: opacity 250ms;
+  content: "";
+  border-radius: 35px;
 }
 
 .lds-ring {
@@ -193,8 +230,9 @@ button {
   }
 }
 
-.fa-heart:hover {
-  background: linear-gradient(-200deg, #FF79DA, #9356DC);
+.fa-heart {
+  z-index: 1;
+  position: relative;
 }
 
 header {
@@ -462,21 +500,6 @@ footer ul li p:hover {
   background-color: #B3fbcd;
   display: block;
   margin-bottom: 15px;
-}
-
-.conteneur-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-@media screen and (min-width: 809px) {
-  .conteneur-button button {
-    font-size: 30px;
-  }
 }
 
 .menu-group .content {
@@ -983,6 +1006,7 @@ footer ul li p:hover {
   border-radius: 20px;
   -webkit-box-shadow: 0px 3px 16px #9c9c9e;
           box-shadow: 0px 3px 16px #9c9c9e;
+  z-index: 1;
 }
 
 @media screen and (min-width: 809px) {
@@ -996,6 +1020,10 @@ footer ul li p:hover {
     width: 47%;
     margin-bottom: 60px;
   }
+}
+
+.vignette-place:hover::after {
+  opacity: 1;
 }
 
 .vignette-place__image {
@@ -1068,5 +1096,21 @@ footer ul li p:hover {
   .vignette-place__infos i {
     font-size: 30px;
   }
+}
+
+.vignette-place::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-box-shadow: 0px 3px 16px #9c9c9e;
+          box-shadow: 0px 3px 16px #9c9c9e;
+  opacity: 0;
+  z-index: -1;
+  -webkit-transition: opacity 250ms;
+  transition: opacity 250ms;
+  content: "";
+  border-radius: 20px;
 }
 /*# sourceMappingURL=main.css.map */

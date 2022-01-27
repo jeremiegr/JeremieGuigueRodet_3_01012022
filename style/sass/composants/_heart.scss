@@ -1,5 +1,8 @@
 .fa-heart {
+
     &:hover {
-        background: linear-gradient(-200deg, $secondary-color, $primary-color);
+        // background: linear-gradient(-200deg, $secondary-color, $primary-color);
     }
+    z-index: 1;
+    position: relative;
 }

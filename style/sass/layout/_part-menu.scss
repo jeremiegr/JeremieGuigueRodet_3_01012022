@@ -36,15 +36,6 @@
     }
 }
 
-.conteneur-button {
-            display: flex;
-            justify-content: center;
-                button {
-                    @include tab-big {
-                        font-size: 30px;
-                    }
-                }
-        }
 
 .menu-group {
     
