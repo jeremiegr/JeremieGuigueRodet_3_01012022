@@ -46,12 +46,12 @@
                         font-size: 35px;
                     }
                 }
-                i {
+                .heart {
                     padding-top: 40px;
                     padding-bottom: 40px;
                     padding-right: 40px;
                     font-size: 27px;
-                    color: $falternate-color;
+                    // color: $falternate-color;
                     @include tab-big {
                         font-size: 34px;
                     }

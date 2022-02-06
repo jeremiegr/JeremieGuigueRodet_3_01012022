@@ -137,7 +137,7 @@ p {
 }
 
 .lds-ring {
-  background-color: rgba(147, 86, 220, 0.6);
+  background-color: rgba(147, 86, 220, 0.8);
   -webkit-animation: lds-opacity 3.7s;
           animation: lds-opacity 3.7s;
   opacity: 0;
@@ -230,9 +230,33 @@ p {
   }
 }
 
-.fa-heart {
-  z-index: 1;
-  position: relative;
+html, body {
+  -webkit-animation: html 3.7s;
+          animation: html 3.7s;
+}
+
+@-webkit-keyframes html {
+  0% {
+    overflow: hidden;
+  }
+  99% {
+    overflow: hidden;
+  }
+  100% {
+    overflow: scroll;
+  }
+}
+
+@keyframes html {
+  0% {
+    overflow: hidden;
+  }
+  99% {
+    overflow: hidden;
+  }
+  100% {
+    overflow: scroll;
+  }
 }
 
 header {
@@ -430,16 +454,15 @@ footer ul li p:hover {
   }
 }
 
-.intro-menu .title i {
+.intro-menu .title .heart {
   padding-top: 40px;
   padding-bottom: 40px;
   padding-right: 40px;
   font-size: 27px;
-  color: #393939;
 }
 
 @media screen and (min-width: 809px) {
-  .intro-menu .title i {
+  .intro-menu .title .heart {
     font-size: 34px;
   }
 }
@@ -583,10 +606,10 @@ footer ul li p:hover {
   font-size: 23px;
   padding-right: 17px;
   padding-left: 17px;
-  -webkit-transition: -webkit-transform 300ms ease-in-out;
-  transition: -webkit-transform 300ms ease-in-out;
-  transition: transform 300ms ease-in-out;
-  transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
+  -webkit-transition: -webkit-transform 400ms ease-in-out;
+  transition: -webkit-transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out, -webkit-transform 400ms ease-in-out;
 }
 
 .part-menu__choice {

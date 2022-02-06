@@ -91,10 +91,11 @@
                     i {
                         color: white;
                         rotate: 180deg;
+                        // transform: rotate(180deg);
                         font-size: 23px;
                         padding-right: 17px;
                         padding-left: 17px;
-                        transition: transform 300ms ease-in-out;
+                        transition: transform 400ms ease-in-out;
                     }
 
             }
