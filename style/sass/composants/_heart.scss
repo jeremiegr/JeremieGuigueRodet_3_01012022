@@ -1,0 +1,40 @@
+.heart {
+    div {
+        // display: block;
+        // display: inline-block;
+        cursor: pointer;
+        position: relative;
+        // background-color: blueviolet;
+        &:hover {
+            // background-color: black;
+            // box-shadow: yellowgreen;
+            &> .far {
+                opacity: 0;
+                &+ .fas {
+                    opacity: 1;
+                    scale: 1;
+                }
+            }
+        }
+         
+        .far {
+            // z-index: 1;
+            // opacity: 1;
+            transition: opacity 600ms cubic-bezier(.58,.24,.52,.96);
+        }
+        .fas {
+            position: absolute;
+            right: 0;
+            opacity: 0;
+            transition: opacity cubic-bezier(.58,.24,.52,.96) 400ms, scale 100ms cubic-bezier(.58,.24,.52,.96) ;
+            scale: 0.8;
+            background: linear-gradient(-200deg, $secondary-color, $primary-color);
+            background-size: 100%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            // scale: 1;
+            // z-index: -1;
+        }
+    }
+}
+
