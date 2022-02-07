@@ -565,6 +565,14 @@ footer ul li p:hover {
           animation-fill-mode: backwards;
 }
 
+.menu-group .content + .content + .content + .content {
+  opacity: 1;
+  -webkit-animation-delay: 1200ms;
+          animation-delay: 1200ms;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
 @-webkit-keyframes apparition {
   0% {
     opacity: 0;
@@ -618,7 +626,8 @@ footer ul li p:hover {
 
 .content span i {
   color: white;
-  rotate: 180deg;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
   font-size: 23px;
   padding-right: 17px;
   padding-left: 17px;
@@ -651,8 +660,8 @@ footer ul li p:hover {
 }
 
 .part-menu__choice:hover + span > i {
-  -webkit-transform: rotate(-180deg);
-          transform: rotate(-180deg);
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 .part-menu__choice__description {
