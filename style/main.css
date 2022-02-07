@@ -254,7 +254,8 @@ body {
 
 .heart div:hover > .far + .fas {
   opacity: 1;
-  scale: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .heart div .far {
@@ -268,7 +269,8 @@ body {
   opacity: 0;
   -webkit-transition: opacity cubic-bezier(0.58, 0.24, 0.52, 0.96) 400ms, scale 100ms cubic-bezier(0.58, 0.24, 0.52, 0.96);
   transition: opacity cubic-bezier(0.58, 0.24, 0.52, 0.96) 400ms, scale 100ms cubic-bezier(0.58, 0.24, 0.52, 0.96);
-  scale: 0.8;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
   background: linear-gradient(-200deg, #FF79DA, #9356DC);
   background-size: 100%;
   -webkit-background-clip: text;
@@ -307,9 +309,9 @@ header .header__logo {
 }
 
 .header__back-accueil {
-  -webkit-box-pack: baseline;
-      -ms-flex-pack: baseline;
-          justify-content: baseline;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   position: absolute;
   left: 20px;
 }
