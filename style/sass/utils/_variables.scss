@@ -2,6 +2,9 @@ $primary-color: #9356DC;
 $secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
 
+$lighten-primary-color: lighten(#9356DC, 2%);
+$lighten-secondary-color: lighten(#FF79DA, 2%);
+
 $form-color: #Eaeaea;
 $case-color: #F5f5f5;
 

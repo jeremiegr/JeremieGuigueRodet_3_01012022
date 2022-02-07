@@ -41,15 +41,15 @@
     
         .content {
             opacity: 1;
-            animation: apparition 1500ms cubic-bezier(.21,.95,.33,.99) 200ms;
+            animation: apparition 1700ms cubic-bezier(.21,.95,.33,.99) 200ms;
             animation-fill-mode: backwards;
                 & + .content {
                     opacity: 1;
-                    animation-delay: 400ms;
+                    animation-delay: 450ms;
                     animation-fill-mode: backwards;
                         & + .content {
                             opacity: 1;
-                            animation-delay: 600ms;
+                            animation-delay: 800ms;
                             animation-fill-mode: backwards;
                         }
                 }
