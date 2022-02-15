@@ -1,6 +1,5 @@
 .background-footer {
     background-color: $footer-color;
-    // z-index: 6;
 }
 
 footer {
@@ -22,7 +21,6 @@ footer {
                 @include tab-big {
                     width: 40%;
                 }
-
                     i {
                     color: white;
                     margin-right: 12px;
@@ -31,7 +29,6 @@ footer {
                         color: white;
                             &:hover {
                             text-decoration: underline white;
-                            // text-decoration-color: white;
                         }
                     }
                     

@@ -37,8 +37,7 @@
 }
 
 
-.menu-group {
-    
+.menu-group {   
         .content {
             opacity: 1;
             animation: apparition 1700ms cubic-bezier(.21,.95,.33,.99) 200ms;
@@ -95,9 +94,6 @@
                         transition: right 180ms ease-in-out;
                     i {
                         color: white;
-                        // rotate: 180deg;
-                        // -webkit-transform: rotate(-180deg);
-                        // transform: rotate(180deg);
                         transform: rotate(180deg);
                         font-size: 23px;
                         padding-right: 17px;

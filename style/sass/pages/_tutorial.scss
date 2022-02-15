@@ -11,13 +11,11 @@
         display: flex;
         justify-content: space-between;
     }
-    
-  
+
             .tuto-step {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                // background-color: $case-color;
                 position: relative;
                 margin-left: 20px;
                 margin-bottom: 30px;
@@ -41,7 +39,6 @@
                         left: -20px;
                     }
                     .fas {
-                        // padding: 0 36px;
                         color: $fawesome-color;
                         font-size: 20px;
                         @include mobile-big {
@@ -57,8 +54,7 @@
                         @include desktop {
                             font-size: 24px;
                             margin-left: 15px;
-                        }
-                            
+                        }      
                     }
                     p {
                         font-weight: bold;
@@ -80,7 +76,6 @@
                             font-size: 22px;
                             padding-left: 20px;
                         }
-                        // margin-left: 10px;
                     }
                 }
     }     
