@@ -21,6 +21,13 @@
                 margin-bottom: 30px;
                 height: 92px;
                 border-radius: 30px;
+                cursor: pointer;
+                    &:hover {
+                        background-color: $light-color;
+                            & > .fas {
+                                color: $primary-color;
+                            }
+                    }
                 @include tab-big {
                     height: auto;
                     padding: 25px;

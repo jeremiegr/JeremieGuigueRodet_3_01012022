@@ -481,12 +481,6 @@ footer ul li p:hover {
   font-size: 27px;
 }
 
-@media screen and (min-width: 809px) {
-  .intro-menu .title .heart {
-    font-size: 34px;
-  }
-}
-
 .menu {
   padding-top: 35px;
 }
@@ -540,7 +534,7 @@ footer ul li p:hover {
 .menu .part-menu .underline-title {
   width: 55px;
   height: 4px;
-  background-color: #B3fbcd;
+  background-color: #99e2d0;
   display: block;
   margin-bottom: 15px;
 }
@@ -609,7 +603,7 @@ footer ul li p:hover {
 }
 
 .content span {
-  background-color: #B3fbcd;
+  background-color: #99e2d0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -933,8 +927,17 @@ footer ul li p:hover {
   margin-bottom: 30px;
   height: 92px;
   border-radius: 30px;
+  cursor: pointer;
   -webkit-box-shadow: 0px 3px 16px #9c9c9e;
           box-shadow: 0px 3px 16px #9c9c9e;
+}
+
+.tutorial .tutorial__list .tuto-step:hover {
+  background-color: #f5edff;
+}
+
+.tutorial .tutorial__list .tuto-step:hover > .fas {
+  color: #9356DC;
 }
 
 @media screen and (min-width: 809px) {
@@ -1094,8 +1097,8 @@ footer ul li p:hover {
   position: absolute;
   top: 18px;
   right: 21px;
-  background-color: #B3fbcd;
-  color: #5ca276;
+  background-color: #99e2d0;
+  color: #008766;
   padding: 8px 14px;
   font-size: 16px;
   border-radius: 5px;
